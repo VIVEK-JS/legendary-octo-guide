@@ -10,7 +10,7 @@ const GithubOauth = () => (
     <Route exact path="/">
       <LoginForm />
     </Route>
-    <Route path="/oauth">
+    <Route path="/home">
       <HomePage />
     </Route>
     <Route path="/repo/pagenumber/:pnumber">

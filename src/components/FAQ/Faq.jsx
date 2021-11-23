@@ -3,7 +3,7 @@ import { useParams, useHistory, withRouter, Redirect } from "react-router";
 
 const Faq = ({ history }) => {
   const goHome = () => {
-    history.push("/oauth");
+    history.push("/home");
   };
   return (
     <div className="repo-container">

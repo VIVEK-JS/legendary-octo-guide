@@ -30,7 +30,7 @@ const ShowRepo = ({ history }) => {
     history.push(`/repo/pagenumber/${page}`);
   };
 
-  const goHome = () => history.push("/oauth");
+  const goHome = () => history.push("/home");
 
   return (
     <div className="repo-container">
