@@ -1,70 +1,67 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GitHub OAuth mini project
 
-## Available Scripts
+GitHub Oauth is a protocol that lets external apps request authorization to private details in your GitHub account without getting your password. All developers need to register their application before getting started.
 
-In the project directory, you can run:
+This react app is all about testing GitHub OAuth functionality with our own registered OAuth.
+## Authors
 
-### `npm start`
+- [@VIVEK-JS](https://github.com/VIVEK-JS)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**UI library:** React JS
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Other Libraries Used:** 
 
-### `npm run build`
+Axios : To manage GET and POST requsest. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Redux :- For state managment which can be used as DB.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React-router : To define multiple routes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+## Project system requirments and prerequisites
+- You have to install NODE package manager to your system to run this project.
+- You can follow - https://treehouse.github.io/installation-guides/windows/node-windows.html this step by step guide to install NPM on windows and https://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/ for MAC OS.
+- Some basic familiarity of NCL
 
-### `npm run eject`
+## Deployment
+Step by step guide to run this project:
+- You have to create your own OAuth app with: 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+      Homepage URL : http://localhost:3000/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+      Authorization callback URL: http://localhost:3000/oauth
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   for more detail about how to create OAuth app please visit - https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+- Clone this project using https://github.com/VIVEK-JS/legendary-octo-guide.git using this link or you can download zip file and extract to workplace.
+- Change directory to project directory and install all dependencies using
+     
+      npm install
+- Now,we have to config this app with our OAuth app - 
+    for that copy Client ID from OAuth app and assign it to REACT_APP_CLIENT_ID which is in .env file in project  
+  
+    Simillarly, Genrate Client secrets , copy it and assign this key to REACT_APP_CLIENT_SECRET which is in .env file in project. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- After succesfully completing above steps we can run project using
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        npm run start
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  
+## Environment Variables
 
-### Making a Progressive Web App
+To run this project, you will need to add the following environment variables to your .env file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`REACT_APP_CLIENT_ID` :- Clinet ID of your OAuth app
 
-### Advanced Configuration
+`REACT_APP_CLIENT_SECRET ` : Genrated Clinet Secret ID 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
