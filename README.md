@@ -22,6 +22,8 @@ Redux :- For state managment which can be used as DB.
 
 React-router : To define multiple routes.
 
+gatekeeper : To bypass cors policy
+
   
 ## Project system requirments and prerequisites
 - You have to install NODE package manager to your system to run this project.
